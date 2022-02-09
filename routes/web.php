@@ -34,9 +34,13 @@ Route::get('/contact', function(){
 
 // Route::get("users/{name}",[UserController::class,'loadView']);
 
-Route::post("users",[UserController::class,'getData']);
+// Route::post("users",[UserController::class,'getData']);
 
 Route::view("login","users");
 //Route:get("path","controller file");
 
 //Route::get("User/{fuad}",[User::class,'index']);
+
+Route::view("users", "users");
+Route::view("home", "home");
+Route::view("noaccess", "noaccess");
