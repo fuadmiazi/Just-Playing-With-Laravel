@@ -20,6 +20,15 @@ class ageCheck
         {
             return redirect('noaccess');
         }
+        
+        // if($request->age && $request->age<18)
+        // {
+        //     return redirect('noaccess');
+        //}
+        // if($request->age && $request->age<18)
+        // {
+        //     return redirect('noaccess');
+        // }
         return $next($request);
     }
 }
