@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 //use App\Http\Controllers\User;
 use App\Http\Controllers\UserController;
+//use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,6 +53,12 @@ Route::get('/', function () {
 //     });
 // });
 
-Route::view('users','users')->middleware('protectedPage');
-Route::view('home','home');
-Route::view('noaccess','noaccess');
+// Route::view('users','users')->middleware('protectedPage');
+// Route::view('home','home');
+// Route::view('noaccess','noaccess');
+
+Route::get("users",[UserController::class,'index']);
+
+// Route::get('students',[StudentController::class,'getData']);
+
+
